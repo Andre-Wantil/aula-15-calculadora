@@ -27,49 +27,73 @@ const comptNumbers = [];
 // Um bazilhão de coisas pra checar os botões '-'
 zero.addEventListener('click', () => {
     comptNumbers.push(0)
-    console.log(comptNumbers)
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 um.addEventListener('click', () => {
     comptNumbers.push(1)
-    console.log(comptNumbers)
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 dois.addEventListener('click', () => {
     comptNumbers.push(2)
-    console.log(comptNumbers)
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 tres.addEventListener('click', () => {
     comptNumbers.push(3)
-    console.log(comptNumbers)
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 quatro.addEventListener('click', () => {
     comptNumbers.push(4)
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 cinco.addEventListener('click', () => {
     comptNumbers.push(5)
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 seis.addEventListener('click', () => {
     comptNumbers.push(6)
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 sete.addEventListener('click', () => {
     comptNumbers.push(7)
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 oito.addEventListener('click', () => {
     comptNumbers.push(8)
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 nove.addEventListener('click', () => {
     comptNumbers.push(9)
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 add.addEventListener('click', () => {
     comptNumbers.push('+')
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 subtract.addEventListener('click', () => {
     comptNumbers.push('-')
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 multiply.addEventListener('click', () => {
     comptNumbers.push('*')
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 divide.addEventListener('click', () => {
     comptNumbers.push('/')
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath
 });
 percent.addEventListener('click', () => {
     const finalMath = comptNumbers.join(''); 
@@ -78,19 +102,24 @@ percent.addEventListener('click', () => {
 })
 dot.addEventListener('click', () => {
     comptNumbers.push('.')
+    const finalMath = comptNumbers.join(''); 
+    calcList.innerHTML = finalMath  
 });
 remove.addEventListener('click', () => {
     comptNumbers.pop()
-    console.log(comptNumbers)
+    const finalMath = comptNumbers.join('');
+    calcList.innerHTML = finalMath  
 });
 clear.addEventListener('click', () => {
     comptNumbers.splice(0, comptNumbers.length)
-    console.log(comptNumbers)
+    const finalMath = comptNumbers.join('');
+    calcList.innerHTML = finalMath
+    result.innerHTML = finalMath
 });
 calculate.addEventListener('click', () => {
     const finalMath = comptNumbers.join('');
     const numRecebido = eval(finalMath)
-    console.log(numRecebido)
+    result.innerHTML = numRecebido
 });
 switchSign.addEventListener('click', () => {
     para: for (let i = comptNumbers.length; i > 0; i--) {
@@ -102,5 +131,6 @@ switchSign.addEventListener('click', () => {
             break para
         }
     }
-    console.log(comptNumbers)
-})
+    const finalMath = comptNumbers.join('');
+    calcList.innerHTML = finalMath
+});
